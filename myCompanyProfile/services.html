@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    /* CSS Tambahan Khusus Halaman Menu */
+    .menu-card {
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+    .menu-card:hover {
+      transform: translateY(-5px);
+    }
+    .menu-img {
+      width: 100%;
+      height: 190px;
+      object-fit: cover;
+    }
+    .menu-content {
+      padding: 1.5rem;
+    }
+    .menu-content h3 {
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+    }
+    .price-tag {
+      font-weight: 600;
+      color: var(--accent-color);
+      margin-top: 0.75rem;
+      display: block;
+    }
+  </style>
+
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Sweet Crumb.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+        <li><a href="services.html" class="active">Menu</a></li>
+        <li><a href="portofolio.html">Galeri</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+    </header>
+
+
+    <main>
+    <h1 class="page-title">Menu & Penawaran Kami</h1>
+    <p>Nikmati pilihan roti artisan, kue spesial, dan pastry berkualitas tinggi yang dipanggang segar setiap hari untuk Anda.</p>
+
+    <!-- Grid Container Menggunakan Grid Card -->
+    <div class="grid-container">
+      
+      <!-- Produk 1 -->
+      <div class="menu-card">
+        <img src="gambar/sourdough.jpeg" alt="Sourdough" class="menu-img">
+        <div class="menu-content">
+          <h3>Artisan Bread & Sourdough</h3>
+          <p>Roti gandum utuh dan sourdough dengan proses fermentasi alami, menghasilkan tekstur luar yang renyah dan bagian dalam yang empuk.</p>
+          <span class="price-tag">Mulai dari Rp 35.000</span>
+        </div>
+      </div>
+
+      <!-- Produk 2 -->
+      <div class="menu-card">
+        <img src="gambar/kue karakter.jpeg" alt="Kue Custom Birthday" class="menu-img">
+        <div class="menu-content">
+          <h3>Custom Birthday & Wedding Cake</h3>
+          <p>Kue perayaan spesial yang dapat disesuaikan desain, rasa, dan ukuran dekorasinya untuk momen ulang tahun atau pernikahan Anda.</p>
+          <span class="price-tag">Mulai dari Rp 250.000</span>
+        </div>
+      </div>
+
+      <!-- Produk 3 -->
+      <div class="menu-card">
+        <img src="gambar/pastries.jpeg" alt="French Pastry & Croissant" class="menu-img">
+        <div class="menu-content">
+          <h3>French Pastry & Croissant</h3>
+          <p>Aneka pilihan butter croissant, pain au chocolat, dan fruit danish berlapis mentega murni yang harum dan lezat.</p>
+          <span class="price-tag">Mulai dari Rp 22.000</span>
+        </div>
+      </div>
+
+      <!-- Produk 4 -->
+      <div class="menu-card">
+        <img src="gambar/cakeslices.jpeg" alt="Dessert Box & Slice" class="menu-img">
+        <div class="menu-content">
+          <h3>Dessert Box & Slice Cake</h3>
+          <p>Kue potong siap santap seperti mille crepes, tiramisu cup, dan fudge brownie lumer yang manisnya pas di lidah.</p>
+          <span class="price-tag">Mulai dari Rp 30.000</span>
+        </div>
+      </div>
+
+      <!-- Produk 5 -->
+      <div class="menu-card">
+        <img src="gambar/cheesecake.jpeg" alt="Cheesecake" class="menu-img">
+        <div class="menu-content">
+          <h3>Cheesecake</h3>
+          <p>Hidangan berbahan dasar keju lembut dan lumer di mulut.</p>
+          <span class="price-tag">Mulai dari Rp 40.000</span>
+        </div>
+      </div>
+
+      <!-- Produk 6 -->
+      <div class="menu-card">
+        <img src="gambar/cupcakess.jpeg" alt="Cupcakes" class="menu-img">
+        <div class="menu-content">
+          <h3>Cupcake</h3>
+          <p>Kue berukuran kecil cocok untuk acara ataupun makan ditempat, tersedia berbagai macam rasa.</p>
+          <span class="price-tag">Mulai dari Rp 15.000</span>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+
+    <footer>
+        <p>&copy; Sweet Crumb Bakery.</p>
+    </footer>
+</body>
+</html>

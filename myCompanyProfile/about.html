@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    /* CSS Tambahan Khusus Halaman Tentang Kami */
+    .about-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      background: var(--white);
+      padding: 2.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+    .about-section h2 {
+      color: var(--primary-color);
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    .about-section p {
+      margin-bottom: 1rem;
+      color: var(--text-color);
+    }
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+      margin-top: 1.5rem;
+    }
+    .team-member {
+      background: var(--bg-color);
+      padding: 1.5rem;
+      border-radius: 6px;
+      text-align: center;
+    }
+    .team-member h4 {
+      color: var(--primary-color);
+      margin-bottom: 0.25rem;
+    }
+    .team-member span {
+      font-size: 0.85rem;
+      color: var(--accent-color);
+      font-weight: 500;
+    }
+  </style>
+
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Sweet Crumb.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html" class="active">Tentang Kami</a></li>
+        <li><a href="services.html">Menu</a></li>
+        <li><a href="portofolio.html">Galeri</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+    <main>
+    <div class="about-container" style="margin-top: 2rem;">
+      <div class="about-section">
+        <h2>Cerita Kami</h2>
+        <p>Berdiri sejak tahun 2023, <strong>Sweet Crumb Bakery</strong> berawal dari sebuah impian sederhana di dapur rumahan untuk menghadirkan kue berkualitas tinggi yang dapat dinikmati oleh semua kalangan. Nama "Sweet Crumb" menyimbolkan harapan agar setiap potongan kue yang dinikmati mampu menghadirkan momen manis di setiap waktu hidup Anda.</p>
+        <p>Seiring berjalannya waktu, komitmen kami untuk menjaga kualitas rasa, kebersihan, dan pelayanan membuat Sweet Crumb berkembang menjadi toko roti pilihan favorit di kota ini.</p>
+      </div>
+
+      <div class="about-section">
+        <h2>Filosofi & Komitmen</h2>
+        <p>Kami percaya bahwa produk panggang yang luar biasa tidak lahir secara kebetulan. Oleh karena itu, kami menerapkan standar ketat dalam pemilihan bahan baku—mulai dari tepung berkualitas, mentega murni tanpa campuran, hingga buah-buahan segar pilihan petani lokal.</p>
+      </div>
+
+      <div class="about-section">
+        <h2>Tim Di Balik Dapur</h2>
+        <p>Dioperasikan oleh para tenaga ahli kuliner yang berdedikasi tinggi terhadap seni tata boga:</p>
+        
+        <div class="team-grid">
+          <div class="team-member">
+            <h4>Chef Veronika Amelia</h4>
+            <span>Head Baker & Founder</span>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Berpengalaman lebih dari 8 tahun dalam teknik pembuatan roti artisan dan viennoiserie.</p>
+          </div>
+          <div class="team-member">
+            <h4>Siti Rahma</h4>
+            <span>Head Pastry Chef</span>
+            <p style="font-size: 0.9rem; margin-top: 0.5rem;">Spesialis dekorasi kue kustom, *wedding cake*, dan kreasi dessert modern.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+    
+    
+
+    <footer>
+        <p>&copy; Sweet Crumb Bakery.</p>
+    </footer>
+</body>
+</html>

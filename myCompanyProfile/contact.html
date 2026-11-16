@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    /* CSS Tambahan khusus Form & Layout Kontak */
+    .contact-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .contact-info, .contact-form {
+      background: var(--white);
+      padding: 2.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+    .contact-info h3, .contact-form h3 {
+      color: var(--primary-color);
+      margin-bottom: 1.25rem;
+      font-size: 1.3rem;
+    }
+    .info-item {
+      margin-bottom: 1rem;
+    }
+    .info-item strong {
+      display: block;
+      color: var(--primary-color);
+      margin-bottom: 0.2rem;
+    }
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: var(--primary-color);
+    }
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+      width: 100%;
+      padding: 0.75rem;
+      border: 1px solid #cbd5e1;
+      border-radius: 4px;
+      font-family: inherit;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus,
+    .form-group select:focus {
+      outline: none;
+      border-color: var(--accent-color);
+    }
+    .btn-submit {
+      background-color: var(--accent-color);
+      color: var(--white);
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 4px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      width: 100%;
+    }
+    .btn-submit:hover {
+      opacity: 0.9;
+    }
+  </style>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Sweet Crumb.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+        <li><a href="services.html">Menu</a></li>
+        <li><a href="portofolio.html">Galeri</a></li>
+        <li><a href="contact.html" class="active">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+    
+
+    <main>
+    <h1 class="page-title">Hubungi & Pesan Kue</h1>
+    <p>Punya pertanyaan seputar produk kami atau ingin memesan kue khusus untuk acara Anda? Silakan hubungi kami melalui informasi di bawah ini.</p>
+
+    <div class="contact-wrapper">
+      
+      <!-- Kolom Informasi Toko -->
+      <div class="contact-info">
+        <h3>Informasi Toko & Outlet</h3>
+        
+        <div class="info-item">
+          <strong>Alamat Toko:</strong>
+          <p>Jl. Kenanga Raya No. 45, Bandung, Jawa Barat</p>
+        </div>
+
+        <div class="info-item">
+          <strong>WhatsApp Pemesanan Cepat:</strong>
+          <p>+62 812 3456 7890</p>
+        </div>
+
+        <div class="info-item">
+          <strong>Email Resmi:</strong>
+          <p>halo@SweetCrumbBakery.fiktif</p>
+        </div>
+
+        <div class="info-item">
+          <strong>Jam Operasional:</strong>
+          <p>Senin – Minggu: 08.00 – 21.00 WIB</p>
+        </div>
+      </div>
+
+      <!-- Kolom Formulir Pemesanan/Pesan -->
+      <div class="contact-form">
+        <h3>Formulir Pesanan / Pesan</h3>
+        <form action="#" method="POST">
+          <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" name="name" placeholder="Masukkan nama Anda" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="phone">Nomor WhatsApp / Telepon</label>
+            <input type="tel" id="phone" name="phone" placeholder="Contoh: 08123456789" required>
+          </div>
+
+          <div class="form-group">
+            <label for="category">Kategori Kebutuhan</label>
+            <select id="category" name="category">
+              <option value="custom">Pesan Custom Cake / Acara</option>
+              <option value="menu">Pertanyaan Menu Harian</option>
+              <option value="other">Lainnya</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Detail Pesanan / Pesan Anda</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tuliskan jenis kue, tanggal acara, atau pesan Anda di sini..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Kirim Pesan</button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+
+    <footer>
+        <p>&copy; Sweet Crumb Bakery.</p>
+    </footer>
+</body>
+</html>

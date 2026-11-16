@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Karya</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+    /* CSS Tambahan khusus untuk Card Portofolio/Galeri Kue */
+    .portfolio-card {
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+    .portfolio-card:hover {
+      transform: translateY(-5px);
+    }
+    .portfolio-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      background-color: #e2e8f0; /* Warna cadangan jika gambar gagal dimuat */
+    }
+    .portfolio-content {
+      padding: 1.5rem;
+    }
+    .portfolio-content h3 {
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+      font-size: 1.25rem;
+    }
+    .portfolio-tag {
+      display: inline-block;
+      background: #e0f2fe;
+      color: #0369a1;
+      padding: 0.25rem 0.75rem;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+      <a href="index.html" class="logo">Sweet Crumb.</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="about.html">Tentang Kami</a></li>
+        <li><a href="services.html">Menu</a></li>
+        <li><a href="portofolio.html" class="active">Galeri</a></li>
+        <li><a href="contact.html">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1 class="page-title">Galeri Karya & Pesanan Spesial</h1>
+    <p>Beberapa kreasi kue dan hantaran istimewa yang telah kami buat untuk merayakan momen berharga para pelanggan setia Sweet Crumb Bakery.</p>
+
+    <!-- Grid Container untuk Galeri Kue -->
+    <div class="grid-container">
+      
+      <!-- Item 1 -->
+      <div class="portfolio-card">
+        <!-- Anda bisa mengganti link src dengan gambar lokal (misal: images/wedding-cake.jpg) atau URL Unsplash -->
+        <img src="gambar/weddingcake2.jpeg" alt="Weding Cake" class="portfolio-img">
+        <div class="portfolio-content">
+          <span class="portfolio-tag">Wedding Cake</span>
+          <h3>The Royal Wedding Tier Cake</h3>
+          <p>Kue pernikahan 3 tingkat dengan dekorasi bunga <em>handmade</em> bernuansa putih gading dan emas mewah untuk perayaan intim.</p>
+        </div>
+      </div>
+      
+      <!-- Item 2 -->
+      <div class="portfolio-card">
+        <img src="gambar/millecrepelemon.jpeg" alt="Mile Crepes Earl Grey Lemon" class="portfolio-img">
+        <div class="portfolio-content">
+          <span class="portfolio-tag">Signature Slice</span>
+          <h3>Mille Crepes Earl Grey Lemon</h3>
+          <p>Kue lapis tipis Prancis dengan olesan krim teh Earl Grey yang harum dipadu sentuhan selai lemon segar di setiap lapisannya.</p>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="portfolio-card">
+        <img src="gambar/hampers.jpeg" alt="Hampers Hari Raya" class="portfolio-img">
+        <div class="portfolio-content">
+          <span class="portfolio-tag">Hampers & Gift</span>
+          <h3>Exclusive Eid & Holiday Hampers</h3>
+          <p>Kotak hantaran eksklusif berisi varian kue kering premium seperti nastar klasik, kastengel keju tua, dan cookies cokelat almond.</p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="portfolio-card">
+        <img src="gambar/kuestoberi.jpeg" alt="Berry Birthday Cake" class="portfolio-img">
+        <div class="portfolio-content">
+          <span class="portfolio-tag">Custom Birthday</span>
+          <h3>Minimalist Berry Birthday Cake</h3>
+          <p>Kue ulang tahun dasar cokelat lembut dengan balutan krim vanila lembut serta taburan buah beri segar pilihan di atasnya.</p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="portfolio-card">
+        <img src="gambar/kuasongstoberi.jpeg" alt="Berry Croissant" class="portfolio-img">
+        <div class="portfolio-content">
+          <span class="portfolio-tag">Berries Croissant</span>
+          <h3>Berry Croissant</h3>
+          <p>Kue kering berlapis asal Prancis, dengan tambahan manisnya buah beri.</p>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="portfolio-card">
+        <img src="gambar/bericheesecake.jpeg" alt="Berry Cheesecake" class="portfolio-img">
+        <div class="portfolio-content">
+          <span class="portfolio-tag">Berries Cheesecake</span>
+          <h3>Berry Cheesecake</h3>
+          <p>Lembutnya keju dalam cheesecake dipadukan dengan segar dan manisnya buah beri.</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+    <footer>
+        <p>&copy; Sweet Crumb Bakery.</p>
+    </footer>
+</body>
+</html>
